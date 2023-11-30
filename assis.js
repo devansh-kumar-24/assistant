@@ -52,7 +52,7 @@ recognition.addEventListener("result", (e) => {
       p.classList.add("replay");
       p.innerText = "I am fine";
       texts.appendChild(p);
-      speechSynthesis.speak(p);
+      speak(p);
     }
     if (
       text.includes("what's your name") ||
@@ -62,7 +62,7 @@ recognition.addEventListener("result", (e) => {
       p.classList.add("replay");
       p.innerText = "My Name is Empower";
       texts.appendChild(p);
-      speechSynthesis.speak(p);
+      speak(p);
     }
     if (text.includes("Is it safe to exercise during pregnancy")) {
       p = document.createElement("p");
@@ -70,7 +70,7 @@ recognition.addEventListener("result", (e) => {
       p.innerText =
         "Generally, yes. However, it's essential to consult with your healthcare provider before starting or continuing any exercise routine. Low-impact activities like walking and swimming are often recommended";
       texts.appendChild(p);
-      speechSynthesis.speak(p);
+      speak(p);
     }
 
     if (text.includes("What foods should I avoid during pregnancy")) {
@@ -79,7 +79,7 @@ recognition.addEventListener("result", (e) => {
       p.innerText =
         "Certain foods, like raw seafood, unpasteurized dairy, and undercooked meats, should be avoided. Consult with your doctor for a comprehensive list. Generally, a balanced diet with a variety of nutrients is crucial.";
       texts.appendChild(p);
-      speechSynthesis.speak(p);
+      speak(p);
     }
 
     if (text.includes("How much weight gain is normal")) {
@@ -88,7 +88,7 @@ recognition.addEventListener("result", (e) => {
       p.innerText =
         "Certain foods, like raw seafood, unpasteurized dairy, and undercooked meats, should be avoided. Consult with your doctor for a comprehensive list. Generally, a balanced diet with a variety of nutrients is crucial.";
       texts.appendChild(p);
-      speechSynthesis.speak(p);
+      speak(p);
     }
   }
 });
